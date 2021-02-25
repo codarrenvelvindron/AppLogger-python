@@ -1,6 +1,7 @@
 # AppLogger-python
 - Author: Codarren Velvindron
 - Licence: MIT
+- Date: 25/02/2021
 
 ## Logging facility for python
 
