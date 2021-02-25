@@ -57,7 +57,8 @@ class Logger:
         timestamp = str(self.__timestamp)
         data = str(data)
         action = str(action)
-        textual = timestamp + " " + action + " " + data
+        separator = " "
+        entry = timestamp + separator + action + separator + data
         f = open (self.__logpath, "a")
-        f.write(f'{textual}\n')
+        f.write(f'{entry}\n')
         f.close
