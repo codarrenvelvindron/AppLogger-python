@@ -95,3 +95,6 @@ log name here will be: audit_logs/audit_25022021.log
 2021-02-25 19:28:56.887911 COUNT_TEXT count_to_(10)
 ```
 
+## Possible limitations
+- In high volume environments, logging to file might limit performance.
+- This is mostly aimed at hobbyist projects, not production environments
