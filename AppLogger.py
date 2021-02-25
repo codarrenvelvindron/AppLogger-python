@@ -21,6 +21,7 @@ class Logger:
         self.__logname = logname
 
     def __make_folder(self):
+        """ make folder to store logs in cwd """
         cwd = os.getcwd()
         dirname = self.__logname + "_logs"
         self.__folderpath = os.path.join(cwd, dirname)
@@ -47,9 +48,11 @@ class Logger:
             f.close()
     
     def __gen_timestamp(self):
+        """ Generate a timestamp based on current time and date """
         self.__timestamp = datetime.now()
 
     def write(self, action='action', data='data'):
+        """ Add log entries"""
         self.__make_folder()
         self.__gen_log()
         self.__gen_timestamp()
