@@ -1,4 +1,6 @@
 # AppLogger-python
+- Author: Codarren Velvindron
+- Licence: MIT
 
 ## Logging facility for python
 
