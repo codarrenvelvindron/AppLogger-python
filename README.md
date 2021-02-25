@@ -18,9 +18,18 @@ logger = AppLogger.Logger("nameoflog", 'separator', 'extension' )
 ```
 Where 'nameoflog' can be anything, eg. audit, test.
 
+separator and extension are optional parameters.
+
 It will automatically create a new folder in current directory named nameoflog_logs
 
 And the log name in that directory will be called 'nameoflog'_date.log
+
+## Customizing
+### Format the log to a csv
+Here, we are making it a .csv with a ; as separator
+```python
+logger = AppLogger.Logger("myapp", ';', '.csv' )
+```
 
 ## Usage Example
 It can log right before the action is happening.
@@ -79,3 +88,4 @@ log name here will be: audit_logs/audit_25022021.log
 2021-02-25 19:28:56.887867 COUNT_TEXT count_to_(9)
 2021-02-25 19:28:56.887911 COUNT_TEXT count_to_(10)
 ```
+
