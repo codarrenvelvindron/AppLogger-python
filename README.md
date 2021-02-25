@@ -98,3 +98,6 @@ log name here will be: audit_logs/audit_25022021.log
 ## Possible limitations
 - In high volume environments, logging to file might limit performance.
 - This is mostly aimed at hobbyist projects, not production environments
+
+## Contributions
+- If you found an issue, or have a cool improvement, send me a pull request !
