@@ -7,7 +7,7 @@
 
 ## Introduction
 - Easy to use: Just import, instantiate and write to logs
-- Simple: By using an ***action** and a **data** variable, where action is the bulk action and data can be more detailed !
+- Simple: By using an ***action*** and a ***data*** variable, where action is the bulk action and data can be more detailed !
 - Customizable: set the logs to any extension and use your own separator
 - Log variable changes: it is possible, check the example .py file
 
