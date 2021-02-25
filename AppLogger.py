@@ -15,10 +15,14 @@ class Logger:
     __logpath = ''
     __gen_date_v = ''
     __timestamp = ''
-   
-    def __init__(self, logname):
+    __separator = ''
+    __extension = ''
+
+    def __init__(self, logname, separator = ' ', extension = '.log'):
         """ Init for class """
         self.__logname = logname
+        self.__separator = separator
+        self.__extension = extension
 
     def __make_folder(self):
         cwd = os.getcwd()
@@ -39,7 +43,7 @@ class Logger:
         """ Create log with with date and extension """
         self.__gen_date()
         logdate = self.__gen_date_v
-        logext = ".log"
+        logext = self.__extension
         current_logname = str(self.__logname) + "_" + str(logdate) + logext
         self.__logpath = os.path.join(self.__folderpath, current_logname)
         if not os.path.exists(self.__logpath):
@@ -57,8 +61,8 @@ class Logger:
         timestamp = str(self.__timestamp)
         data = str(data)
         action = str(action)
-        separator = " "
-        entry = timestamp + separator + action + separator + data
+        sep = self.__separator
+        entry = timestamp + sep + action + sep + data
         f = open (self.__logpath, "a")
         f.write(f'{entry}\n')
         f.close
