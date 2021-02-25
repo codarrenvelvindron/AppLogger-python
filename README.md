@@ -14,7 +14,7 @@ import AppLogger
 
 ## Create a new object
 ```python
-logger = AppLogger.Logger("nameoflog")
+logger = AppLogger.Logger("nameoflog", 'separator', 'extension' )
 ```
 Where 'nameoflog' can be anything, eg. audit, test.
 
