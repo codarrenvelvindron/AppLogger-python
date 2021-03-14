@@ -64,5 +64,5 @@ class Logger:
         sep = self.__separator
         entry = timestamp + sep + action + sep + data
         f = open (self.__logpath, "a")
-        f.write(f'{entry}\n')
+        f.write('{}\n'.format(entry))
         f.close
